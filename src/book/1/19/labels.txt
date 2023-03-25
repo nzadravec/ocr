@@ -1,0 +1,8 @@
+0.png r
+1.png i
+2.png j
+3.png e
+4.png č
+5.png i
+6.png )
+7.png :

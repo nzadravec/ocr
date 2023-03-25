@@ -1,0 +1,18 @@
+Zbirka riješenih zadataka
+U ovom zadatku podatkovna riječ ima k = 8 bitova, broj zalihosnih bitova r = 1, te je ukupna
+duljina kodne riječi n = k + r = 9. Redundancija koda tada je određena izrazom:
+Ovaj kod otkriva svaku jednostruku pogrešku, i svaki neparan broj pogrešaka. Kod ne može
+ispraviti ni jednu pogrešku.
+Niz okteta {25, 12, 250, 54, 93, 33, 196, 212} potrebno je zaštititi uporabom uzdužnog i
+poprečnog pariteta (koristiti parni paritet). Pri tome treba koristiti takav način kodiranja koji
+će osigurati minimalnu redundanciju! Prikažite kodirane podatke i izračunajte redundanciju.
+Niz koji kodiramo sastoji se od 8 ~ 8 = 64 bitova. Ovaj niz potrebno je presložiti u blok bitova
+koji u svakom retku sadrži W podatkovnih bitova, a u svakom stupcu H podatkovnih bitova.
+Ukupan broj podatkovnih bitova tada će biti p = W ~ H i to mora biti jednako 64. Cijeli blok
+očito će biti dimenzija n = (W + 1) ~ ( H + 1). Broj zalihosnih bitova tada je r = W + H + 1.
+Redundancija R računa se prema izrazu:
+Budući da tražimo takav način kodiranja da redundancija bude minimalna, pronađimo mini-
+mum te funkcije dviju varijabli (W i H). U tu svrhu ćemo najprije eliminirati jednu od varijabla
+korištenjem supstitucije:
+Što će dati:
+pa imamo:

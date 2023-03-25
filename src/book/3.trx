@@ -1,0 +1,16 @@
+Zaštitno kodiranje. Brojevni sustavi.
+Tvrdnja se može izreći i obratno: da bi kod mogao ispravljati t pogrešaka, minimalna distanca
+između svakih dviju ispravnih kodnih riječi mora biti d ~ 2t + 1.
+Ova tvrdnja vrijedit će i za sve kodove koje ćemo obraditi u nastavku.
+Oktet 213 potrebno je zaštititi paritetnim bitom uz uporabu parnog pariteta. Objasniti ovaj
+način zaštitnog kodiranja, i svojstva.
+Traženo kodiranje obavlja se tako da se podatkovnoj riječi doda još jedan bit, koji se postavi
+na onu vrijednost uz koju je cijela kodna riječ traženog pariteta. Ako je n-bitna podatkovna
+riječ dana bitovima b0, b1, ~, bn-1, a paritetni bit označimo s bn, tada uz pretpostavku parnog
+pariteta mora vrijediti:
+odakle odmah slijedi:
+Ako se pak koristi neparni paritet, tada paritetni bit mora zadovoljavati izraz:
+odakle odmah slijedi:
+Uz zadane podatke: 213 = 11010101(2), paritetni bit iznosi:
+te je kodna riječ: 111010101 (podcrtan je paritetni bit).
+Lako se uvjeriti da ova kodna riječ doista zadovoljava početni uvjet:

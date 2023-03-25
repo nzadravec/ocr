@@ -1,0 +1,11 @@
+0.png t
+1.png j
+2.png .
+3.png s
+4.png l
+5.png i
+6.png j
+7.png e
+8.png d
+9.png i
+10.png :

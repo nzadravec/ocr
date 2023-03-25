@@ -1,0 +1,19 @@
+Zaštitno kodiranje. Brojevni sustavi.
+Potrebno je poslati ukupno 17 bitova kako bismo mogli sigurno prenijeti 12 bitova poruke
+(sigurno u smislu mogućnosti ispravljanja jednostruke pogreške).
+Vrijednost zaštitnog bita izračunamo na slijedeći način:
+Pronađemo u tablici (zasivljeno područje) onaj redak u kojem ispod traženog zaštitnog
+bita imamo 1 ( npr. za prvi zaštitni bit to je zadnji redak).
+Suma modulo 2 (što je ekvivalentno operaciji isključivo ili) tog bita sa svim podatkov-
+nim bitovima koji se nalaze u stupcima koji u tom istom retku imaju 1 mora zadovolja-
+vati traženi paritet (dakle, biti 0 za parni paritet, odnosno 1 za neparni paritet).
+Provedimo taj postupak. Najprije na mjesta podatkovnih bitova razmjestimo bitove poruke:
+(? označava da na ovom mjestu još ne znamo vrijednost određenog bita)
+C(1) ima 1 u petom (zadnjem) retku. U tom retku 1 imaju još i P(3), P(5), P(7),
+P(9), p(11), P(13), P(15), P(17). Sumiramo vrijednosti svih navedenih P-bitova:
+1 + 0 + 1 + 0 + 0 + 1 + 1 + 0 mod 2 = 4 mod 2 = 0, te je C(1) = 0. Da se traži neparan
+paritet, C(1) bi bio komplement dobivenog rezultata, dakle 1.
+C(2) ima 1 u četvrtom (predzadnjem) retku. U tom retku 1 imaju još i P(3), P(6),
+P(7), P(10), P(11), P(14), P(15). Sumiramo vrijednosti svih navedenih P-bitova: 1 + 1 +
+1 + 0 + 0 + 0 + 1 mod 2 = 4 mod 2 = 0, te je C(2) = 0. Da se traži neparan paritet, C(2)
+bi bio komplement dobivenog rezultata, dakle 1.

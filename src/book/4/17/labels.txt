@@ -1,0 +1,8 @@
+0.png p
+1.png a
+2.png i
+3.png m
+4.png a
+5.png m
+6.png o
+7.png :

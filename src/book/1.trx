@@ -1,0 +1,20 @@
+Zaštitno kodiranje. Brojevni sustavi.
+1. Zaštitno kodiranje. Brojevni sustavi. Dekadski kodovi.
+Četiri-bitni podatak 1011 potrebno je zaštititi kodom n-strukog ponavljanja (uz n = 5).
+Prikazati zaštićeni podatak i navesti svojstva ovog kodiranja. Pokazati način ispravljanja
+pogreške na primjeru.
+Opisani se kod svrstava u najjednostavnije moguće, pri čemu kod odjednom može kodirati
+samo jedan bit podatka (dakle 0 ili 1) i zbog toga ima samo dvije kodne riječi {000 ~0, 111 ~1}.
+Dakle, podatak 0 kodira se sa n nula, a podatak 1 sa n jedinica.
+Podatak 1011 tada će uz n = 5 biti kodiran kao 11111 00000 11111 11111.
+Redundancija ovog kodiranja je vrlo velika; naime:
+i povećanjem n raste prema 1 (r je broj zaštitnih, tj. redundantnih bitova, n je ukupan broj
+bitova). No, zahvaljujući velikoj redundanciji, kod može otkrivati i ispravljati čak ~(n-1)/2~
+pogrešaka, gdje je s ~x~ definirana funkcija zaokruženja prema prvom manjem cijelom broju.
+U našem primjeru, broj pogrešaka koje kod može otkriti i ispraviti iznosi:
+Kako smo došli do ovog zaključka? Ključ je u računanju udaljenosti primljene kodne riječi i
+svake moguće ispravne kodne riječi, gdje se udaljenost računa kao broj različitih bitova. Ako
+kodna riječ ima n bitova, tada je uslijed pogreške mogla nastupiti jedna od sljedećih situacija:
+promijenjeno je nula bitova, promijenjen je jedan bit, ~, promijenjeno je svih n bitova.
+Pogledajmo to grafički za n = 5 (i uzmimo u obzir da imamo samo dvije ispravne kodne
+riječi):

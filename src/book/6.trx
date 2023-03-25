@@ -1,0 +1,19 @@
+Zbirka riješenih zadataka
+To znači da ćemo svaki oktet staviti u jedan redak. Zaštićeni blok podataka iznosi:
+Prvi redak pripada paritetnim bitovima poprečnog pariteta, a zadnji stupac pripada paritet-
+nim bitovima uzdužnog pariteta.
+Poruku 101100011010(2) potrebno je zaštititi uporabom Hammingovog koda koristeći se par-
+nim paritetom. Zatim pretpostavite da tijekom prijenosa takve zaštićene poruke uslijed dje-
+lovanja smetnja 12-ti bit ( brojeći s lijeva na desno počevši od 1) promijeni iznos. Možemo li
+otkriti da je došlo do pogreške u prijenosu, i možemo li ispraviti pogrešku? Pokažite to.
+Hammingov kod miješa zaštitne bitove s podatkovnim bitovima. Najprije je potrebno usta-
+noviti koliko će zaštićena riječ imati bitova i kako će se oni računati. Možemo se poslužiti
+jednostavnom metodom: generiramo određen broj bitova od 1 naviše. Svaki bit koji je po-
+tencija broja 2 je zaštitni; preostali su podatkovni. Stanemo kada smo generirali dovoljan broj
+podatkovnih bitova (12 jer naša poruka ima toliko bitova). Zatim ispod svakog bita napišemo
+njegov redni broj u binarnom obliku (vidi tablicu, zasivljeno područje). Zatim prema tim red-
+nim brojevima utvrđujemo gdje se nalaze zaštitni a gdje podatkovni bitovi. 'C' označava da
+je bit zaštitni, 'P' označava da je bit podatkovni. Pravilo je vrlo jednostavno: zaštitni bitovi
+su oni bitovi koji u stupcu ispod sebe (u zasivljenom području) imaju samo jednu jedinicu.
+Svi preostali bitovi su podatkovni. U ovom zadatku bitovi se numeriraju slijeva nadesno,
+počevši od 1.

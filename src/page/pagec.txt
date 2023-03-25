@@ -1,0 +1,9 @@
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+012345678901234567890123456789
+!@#$%^&*()_+-=|\{
+}[]:''~<>?;',./
+!@#$%^&*()_+-=|\{
+}[]:''~<>?;',./

@@ -1,0 +1,8 @@
+Since the orientation is perfectly horizontal, the first step is to determine the position and extent of the
+lines of text in the image. This can be done by constructing a horizontal projection and searching it
+for minima. The projection is simply the sum of the pixel values in a specified direction, so a horizon-
+tal projection is the sum of the pixels in each row. The row of pixels that begins a new line will be one
+in which some of the pixels are black, and the last row belonging to that line will be the last one hav-
+ing any black pixels. The start and end columns for the line are found by searching the rows that
+belong to that line, from column zero through to the first column having a set pixel. The same is done,
+but in the reverse direction, to find the last set pixel in a line.

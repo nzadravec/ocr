@@ -1,0 +1,11 @@
+0.png p
+1.png o
+2.png č
+3.png e
+4.png v
+5.png š
+6.png i
+7.png o
+8.png d
+9.png 1
+10.png .

@@ -1,0 +1,15 @@
+Zbirka riješenih zadataka
+Na prikazanoj slici referentna kodna riječ je 00000. Isto razmatranje možemo provesti ako kao
+referentnu kodnu riječ uzmemo 11111, čime dobijemo simetričnu sliku:
+Uzevši u obzir da je vjerojatnost pojave višestruke pogreške uobičajeno manja od vjerojat-
+nosti pojave manje pogreške, uvijek će se pretpostavljati da je došlo do minimalnog broja
+promijenjenih bitova. Zbog toga će se izračunati udaljenost primljene riječi do svake ispravne
+kodne riječi, i kao prava poslana kodna riječ bit će uzeta ona ispravna kodna riječ koja ima mi-
+nimalnu udaljenost. Primjerice, ako je primljena kodna riječ 10101, računamo udaljenosti:
+Dakle, pretpostavit ćemo da je poslana kodna riječ 11111, što odgovara podatku 1. Na taj
+način kod će pouzdano ispravljati svaku jednostruku pogrešku, i svaku dvostruku pogrešku,
+što smo inicijalno i utvrdili. No u slučaju trostruke pogreške - kod će zakazati. Naime, tada
+će udaljenost primljene riječi biti manja do one druge kodne riječi, i ispravljanje pogreške će
+zakazati (zbog čega smo i izrekli tvrdnju da kod pouzdano ispravlja do dvije pogreške).
+Opčenito vrijedi sljedeća tvrdnja: kod s minimalnom udaljenošću d između svakih dviju
+ispravnih kodnih riječi može ispraviti ~(d - 1)/2~ pogrešaka.
